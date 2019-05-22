@@ -1,0 +1,19 @@
+{
+    "ausgenv": {
+        "awscloudformation": {
+            "AuthRoleName": "ausgamplify-ausgenv-20190522200016-authRole",
+            "UnauthRoleArn": "arn:aws:iam::593012886934:role/ausgamplify-ausgenv-20190522200016-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::593012886934:role/ausgamplify-ausgenv-20190522200016-authRole",
+            "Region": "ap-northeast-2",
+            "DeploymentBucketName": "ausgamplify-ausgenv-20190522200016-deployment",
+            "UnauthRoleName": "ausgamplify-ausgenv-20190522200016-unauthRole",
+            "StackName": "ausgamplify-ausgenv-20190522200016",
+            "StackId": "arn:aws:cloudformation:ap-northeast-2:593012886934:stack/ausgamplify-ausgenv-20190522200016/c837d0b0-7c80-11e9-b902-0254be68f5cc"
+        },
+        "categories": {
+            "auth": {
+                "ausgamplify6303deab": {}
+            }
+        }
+    }
+}

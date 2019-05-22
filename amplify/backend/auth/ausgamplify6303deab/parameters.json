@@ -1,0 +1,68 @@
+{
+    "identityPoolName": "ausgamplify6303deab_identitypool_6303deab",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "ausgam_6303deab_lambda_log_policy",
+    "openIdLambdaRoleName": "ausgam_6303deab_openid_lambda_role",
+    "openIdRolePolicy": "ausgam_6303deab_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "ausgam_6303deab_openid_lambda_iam_policy",
+    "openIdLogPolicy": "ausgam_6303deab_openid_lambda_log_policy",
+    "userPoolName": "ausgamplify6303deab_userpool_6303deab",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "ausgam6303deab_sns-role",
+    "roleExternalId": "ausgam6303deab_role_external_id",
+    "policyName": "ausgam6303deab-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "ausgam6303deab_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "ausgam6303deab_totp_lambda_role",
+    "mfaLambdaLogPolicy": "ausgam6303deab_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "ausgam6303deab_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "ausgam6303deab_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "ausgam6303deab_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "ausgam6303deab_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "ausgam6303deab_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "ausgamplify6303deab",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default"
+}
